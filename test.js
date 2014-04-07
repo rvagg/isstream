@@ -45,8 +45,8 @@ function testDuplex (pass, type, stream) {
 }
 
 
-[ true, false, 0, 1, 1.0, 'string', {}, function foo () {} ].forEach(function (o) {
-  test(false, 'non-stream / primitive: ' + (JSON.stringify(o) || o.toString()), o)
+[ undefined, null, '', true, false, 0, 1, 1.0, 'string', {}, function foo () {} ].forEach(function (o) {
+  test(false, 'non-stream / primitive: ' + (JSON.stringify(o) || (o && o.toString()) || o), o)
 })
 
 
