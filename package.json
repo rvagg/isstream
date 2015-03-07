@@ -1,6 +1,6 @@
 {
   "name": "isstream",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Determine if an object is a Stream",
   "main": "isstream.js",
   "scripts": {
